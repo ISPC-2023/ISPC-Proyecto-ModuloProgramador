@@ -1,9 +1,9 @@
 # :mortar_board: ISPC
 ## :newspaper: Proyecto
-## :computer: ModuloProgramador 
+### :computer: ModuloProgramador 
 Grupo creado para trabajar contenidos dictados en el Módulo Programador - TSDWAD - 2023.
 
-### Integrantes del grupo
+#### Integrantes del grupo
 
 - :girl: Ponce María Elena Haydee 
 - :woman: Analia Anahi Pellicer Palacios 
