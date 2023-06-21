@@ -8,7 +8,6 @@ Grupo creado para trabajar contenidos dictados en el Módulo Programador.
 
 #### Integrantes del grupo
 
-- :girl: Ponce María Elena Haydee @hechizera10 - ponce.me@hotmail.com
 - :woman: Analia Anahi Pellicer Palacios @AnaliaPellicer - analiapellicer86@gmail.com
 - :princess: Maria celeste Trujillo @CeleTru - celespam@yahoo.com.ar
 - :boy: Gaston Alejandro Sanchez @GastonAlejandroSanchez - gastonalejandrosanchez@outlook.com
