@@ -1,2 +1,0 @@
-Diagrama ER
-Modelo relacional

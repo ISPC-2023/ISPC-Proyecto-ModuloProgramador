@@ -1,0 +1,6 @@
+header = "\n ******************************************************\n ------Poder Judicial de la Provincia de Córdoba------ \n\t  ------Consulta de leyes vigentes------\n ******************************************************"
+closer = "\n\t\tGracias por su consulta.\n\t Aplicación creada por Equipo X - ISPC"
+erroneo = "\nOpcion Incorrecta. Intente nuevamente.\n"
+decorador ="\n ******************************************************"
+correcto="\n\tEl campo se ha modificado correctamente.\n"
+opcion="Ingrese la opción elegida: "
