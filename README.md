@@ -45,7 +45,7 @@ El programa está compuesto de:
 - Un archivo [*menuPrincipal.py*](menuPrincipal.py) que inicia el programa y permite acceder a todos las funcionalidades.
 - Un archivo [*ui.py*](ui.py) que permite personalizar fácilmente los mensajes reutilizables de la interfaz de usuario.
 - La tabla [*leyes_vigentes.py*](leyes_vigentes.py) corresponde a la Base de Datos con la que está trabajando el programa.
-- En la carpeta [*Tabla de Referencia Leyes*]([Evidencia-Tabla de Referencia Leyes](https://github.com/ISPC-2023/ISPC-Proyecto-ModuloProgramador/tree/76c6aaed17c748fbb2fbe31cdbb777280f85ce83/Evidencia-Tabla%20de%20Referencia%20Leyes), encontrará los datos de las leyes cargadas.
+- En la carpeta [*Tabla de Referencia Leyes*](https://github.com/ISPC-2023/ISPC-Proyecto-ModuloProgramador/tree/76c6aaed17c748fbb2fbe31cdbb777280f85ce83/Evidencia-Tabla%20de%20Referencia%20Leyes), encontrará los datos de las leyes cargadas.
 - En la carpeta [*DiagramasBBDD*](Evidencia_DiagramasBBDD), encontrará los diagramas DER y el modelo ER con el que se construyó la Base de Datos.
 - En la carpeta [*Consigna*](Consigna), se encuentra el documento de base que motivó el desarrollo.
 
