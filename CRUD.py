@@ -39,7 +39,29 @@ class Ley():
         base_de_datos.confirmarCambios()
         cursor.close()
         base_de_datos.cerrarBase
+#METODO PARA BUSCAR NORMATIVA POR NÚMERO
+    def busquedaNroNormativa (self):
+        base_de_datos = BBDD.Base_de_datos()
+        base_de_datos.abrirBase()
+        cursor = base_de_datos.cursor()
 
+        consulta= """
+            SELECT TN.Tipo_normativa, L.Nro_Normativa, L.Fecha, L.Descripcion, C.Categoria, J.Jurisdiccion, OL.Organo_legislativo, L.Link 
+            FROM Ley L
+            JOIN Categoria C ON C.id_categoria = L.id_categoria
+            JOIN Tipo_normativa TN ON TN.id_tipo_normativa = L.id_tipo_normativa
+            JOIN Jurisdiccion J ON J.id_jurisdiccion = L.id_jurisdiccion
+            JOIN Organo_legislativo OL ON OL.id_organo_legislativo = L.id_organo_legislativo
+            WHERE L.Nro_Normativa = ?;
+            """
+        valor = self.nro_normativa,
+        cursor.execute (consulta , valor)
+        resultado_consulta = cursor.fetchone()
+        Ley.imprimirEnPantalla (resultado_consulta)
+
+        base_de_datos.confirmarCambios()
+        cursor.close()
+        base_de_datos.cerrarBase
 
 #METODO PARA MOSTRAR RESULTADO EN PANTALLA        
     def imprimirEnPantalla(self, resultado_consulta):   
