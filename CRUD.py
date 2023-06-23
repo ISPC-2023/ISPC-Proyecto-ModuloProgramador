@@ -222,8 +222,7 @@ class Ley():
 
         # Crear la consulta SQL para insertar los datos en la tabla Ley
         consulta = "INSERT INTO Ley (nro_normativa, id_tipo_normativa, fecha, descripcion, link, id_categoria, id_jurisdiccion, id_organo_legislativo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"
-        valores = (nro_normativa, id_tipo_normativa, fecha, descripcion,
-                   link, id_categoria, id_jurisdiccion, id_organo_legislativo)
+        valores = (nro_normativa, id_tipo_normativa, fecha, descripcion, link, id_categoria, id_jurisdiccion, id_organo_legislativo)
         cursor.execute(consulta, valores)
 
         # Obtener el id_ley

@@ -8,7 +8,7 @@ while True:
     print("\nElija una opción :\n 1- Agregar Nueva Normativa.\n 2- Modificar Normativa Existente.\n 3- Borrar Normativa Existente.\n 4- Buscar Normativa Existente.\n 5- Salir de la Aplicación.\n")
     opcion = int(input("Ingrese la opción elegida: "))
     if opcion == 1:
-        crud.Ley.agregarLey()
+        crud.Ley.agregarLey(crud.Ley)
         print("Los datos se han agregado correctamente.")
     elif opcion == 2:
         # Especificar el número de normativa de la ley que deseas modificar
@@ -17,9 +17,9 @@ while True:
         menuUpdate.mostrarMenuModificar(nro_normativa)
     elif opcion == 3:
         # Especificar el número de normativa de la ley que deseas borrar
-        crud.Ley.nro_normativa = int(
+        nro_normativa = int(
             input("Ingrese el numero de normativa que quiere borrar: "))
-        crud.Ley.borrarLey()
+        crud.Ley.borrarLey(nro_normativa)
 
     elif opcion == 4:
         while True:
@@ -27,15 +27,15 @@ while True:
             busqueda = int(input("Ingrese su opcion: "))
             if busqueda == 1:
                 # Especificar el número de normativa de la ley que deseas buscar
-                crud.Ley.nro_normativa = int(
+                nro_normativa = int(
                     input("Ingrese el numero de normativa que quiere buscar: "))
-                crud.Ley.busquedaNroNormativa()
+                crud.Ley.busquedaNroNormativa(nro_normativa)
                 break
 
             elif busqueda == 2:
                 # Especificar la palabra clave para buscar la ley que deseas
-                crud.Ley.palabras_clave = input("Ingrese una palabra clave: ")
-                crud.Ley.busquedaPalabraClave()
+                palabras_clave = input("Ingrese una palabra clave: ")
+                crud.Ley.busquedaPalabraClave(palabras_clave)
                 break
             else:
                 print(ui.erroneo)
