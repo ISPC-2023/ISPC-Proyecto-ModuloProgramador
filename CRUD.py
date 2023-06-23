@@ -142,7 +142,7 @@ class Ley():
         cursor.close()
         datos.cerrarBase
 
-         # Delete Funcion para borrar una ley
+#METODO PARA BORRAR UNA LEY 
     
     def borrarLey (self):
         base_de_datos = BBDD.Base_de_datos()
@@ -168,7 +168,8 @@ class Ley():
         cursor.close()
         base_de_datos.cerrarBase
         # Create Agregado de registros a la base de datos
-    
+        
+#METODO PARA AGREGAR UNA LEY     
     def agregarLey(self):
         base_de_datos = BBDD.Base_de_datos()
         base_de_datos.abrirBase()
