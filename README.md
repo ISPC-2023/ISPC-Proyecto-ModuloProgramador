@@ -51,7 +51,10 @@ El programa está compuesto de:
 
 ### :computer: Ejecución
 - Para ejecutar el programa debe correrse el archivo
-  >[*menuPrincipal.py*](/menuPrincipal.py)
+  >[*menuPrincipal.py*](/menuPrincipal.py)**
+
+  
+**Es de suma importancia abrir el IDE para su ejecución desde la carpeta que tiene todos los archivos, dado que la base de datos es local. Si se corre de forma autónoma el archivo menuPrincipal, sin ejecutarlo desde la carpeta con su dependencias se producirá un error "no such table Ley". Este error se corrige realizando la ejecución como ha sido indicado.
 
 #### *2023*
 
