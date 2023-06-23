@@ -141,3 +141,29 @@ class Ley():
         datos.confirmarCambios()
         cursor.close()
         datos.cerrarBase
+
+         # Delete Funcion para borrar una ley
+    
+    def borrarLey (self):
+        base_de_datos = BBDD.Base_de_datos()
+        base_de_datos.abrirBase()
+        cursor = base_de_datos.cursor()
+
+        #Borra las palabras claves 
+        consulta = "SELECT id_ley FROM Ley WHERE Nro_Normativa = ?"
+        valor = self.nro_normativa,
+        cursor.execute(consulta, valor)
+        id_ley = cursor.fetchone()
+        consulta_eliminar = "DELETE FROM Ley_por_palabra_clave WHERE id_ley = ?"
+        valores_eliminar = (id_ley[0])
+        cursor.execute(consulta_eliminar, (valores_eliminar,))
+
+        consulta= "DELETE FROM Ley WHERE Nro_Normativa = ?"
+        valor = self.nro_normativa,
+        cursor.execute (consulta , valor)
+
+        print("La ley N° {} ha sido borrada con éxito".format(str(self.nro_normativa)))
+
+        base_de_datos.confirmarCambios()
+        cursor.close()
+        base_de_datos.cerrarBase
