@@ -144,14 +144,14 @@ class Ley():
 
 #METODO PARA BORRAR UNA LEY 
     
-    def borrarLey (self):
+    def borrarLey (nro_normativa):
         base_de_datos = BBDD.Base_de_datos()
         base_de_datos.abrirBase()
         cursor = base_de_datos.cursor()
 
         #Borra las palabras claves 
         consulta = "SELECT id_ley FROM Ley WHERE Nro_Normativa = ?"
-        valor = self.nro_normativa,
+        valor = nro_normativa,
         cursor.execute(consulta, valor)
         id_ley = cursor.fetchone()
         consulta_eliminar = "DELETE FROM Ley_por_palabra_clave WHERE id_ley = ?"
@@ -159,10 +159,10 @@ class Ley():
         cursor.execute(consulta_eliminar, (valores_eliminar,))
 
         consulta= "DELETE FROM Ley WHERE Nro_Normativa = ?"
-        valor = self.nro_normativa,
+        valor = nro_normativa,
         cursor.execute (consulta , valor)
 
-        print("La ley N° {} ha sido borrada con éxito".format(str(self.nro_normativa)))
+        print("La ley N° {} ha sido borrada con éxito".format(str(nro_normativa)))
 
         base_de_datos.confirmarCambios()
         cursor.close()
@@ -170,7 +170,7 @@ class Ley():
         # Create Agregado de registros a la base de datos
         
 #METODO PARA AGREGAR UNA LEY     
-    def agregarLey(self):
+    def agregarLey():
         base_de_datos = BBDD.Base_de_datos()
         base_de_datos.abrirBase()
         cursor= base_de_datos.cursor()

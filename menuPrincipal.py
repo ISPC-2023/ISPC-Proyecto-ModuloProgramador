@@ -8,7 +8,7 @@ while True:
     print("\nElija una opción :\n 1- Agregar Nueva Normativa.\n 2- Modificar Normativa Existente.\n 3- Borrar Normativa Existente.\n 4- Buscar Normativa Existente.\n 5- Salir de la Aplicación.\n")
     opcion = int(input("Ingrese la opción elegida: "))
     if opcion == 1:
-        crud.Ley.agregarLey(crud.Ley)
+        crud.Ley.agregarLey()
         print("Los datos se han agregado correctamente.")
     elif opcion == 2:
         # Especificar el número de normativa de la ley que deseas modificar
